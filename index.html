@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Angela’s Web Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="brand" href="#top" aria-label="Angela Cabale, home">
+        <span class="mono" aria-hidden="true">AC</span>
+        <span>Angela Cabale<small>Web &amp; IT</small></span>
+      </a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme" class="tgl" aria-pressed="false" aria-label="Switch to dark mode"><svg id="ti" class="ico" viewBox="0 0 24 24" style="stroke:currentColor;margin:0"></svg><span id="tl">Dark</span></button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <div class="eyebrow">Hello, I’m Angela</div>
+        <h1>Angela Cabale: Web &amp; IT Student</h1>
+        <p class="lead">I’m an IT student at Bukidnon State University who enjoys building clear, easy-to-use websites that feel calm and simple to explore.</p>
+        <div class="tags"><span class="tag">Calm</span><span class="tag">Organized</span><span class="tag">Approachable</span></div>
+        <div class="actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="portrait" role="img" aria-label="Placeholder for Angela’s profile photo">
+        <div>
+          <svg class="ico" style="width:40px;height:40px" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          Angela's Profile Picture
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="band">
+    <div class="wrap cols">
+      <div>
+        <h2>About Me</h2>
+        <p>I’m studying Information Technology at Bukidnon State University, with a focus on web design and web development. I like interfaces that are tidy, readable, and gentle on the eyes, so visitors can find what they need without fuss.</p>
+        <p>This portfolio brings together my student projects, the skills I’m building, and an easy way to reach me, whether you’re an instructor, an employer, or a fellow builder.</p>
+      </div>
+      <div class="card">
+        <h3>Quick facts</h3>
+        <ul class="facts">
+          <li><svg class="ico" viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11.5V16c0 1 2.2 3 5 3s5-2 5-3v-4.5"/></svg><span>IT student, Bukidnon State University</span></li>
+          <li><svg class="ico" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg><span>Web design &amp; development</span></li>
+          <li><svg class="ico" viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Bukidnon, Mindanao, Philippines</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="card"><h3>HTML &amp; CSS</h3><p style="margin:0;color:var(--muted)">Semantic, responsive, accessible layouts.</p><div class="bar" role="img" aria-label="Skill level 85 percent"><i style="width:85%"></i></div></div>
+        <div class="card"><h3>Python</h3><p style="margin:0;color:var(--muted)">Scripting, automation, and problem solving.</p><div class="bar" role="img" aria-label="Skill level 65 percent"><i style="width:65%"></i></div></div>
+        <div class="card"><h3>UI &amp; Visual Design</h3><p style="margin:0;color:var(--muted)">Color systems, type hierarchy, spacing.</p><div class="bar" role="img" aria-label="Skill level 80 percent"><i style="width:80%"></i></div></div>
+        <div class="card"><h3>Organization</h3><p style="margin:0;color:var(--muted)">Planning, documentation, teamwork.</p><div class="bar" role="img" aria-label="Skill level 90 percent"><i style="width:90%"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="band">
+    <div class="wrap">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <article class="card proj">
+          <div class="thumb" aria-hidden="true">HTML Essential</div>
+          <div class="body">
+            <span class="label">Web Foundations</span>
+            <h3>HTML Essential</h3>
+            <p>Core HTML: page structure, semantic tags, links, images, lists, tables, and forms.</p>
+            <button class="open" data-p="0">View project →</button>
+          </div>
+        </article>
+        <article class="card proj">
+          <div class="thumb" aria-hidden="true">CSS Essential</div>
+          <div class="body">
+            <span class="label">Styling &amp; Layout</span>
+            <h3>CSS Essential</h3>
+            <p>Styling the web: colors, typography, spacing, Flexbox, Grid, and responsive layouts.</p>
+            <button class="open" data-p="1">View project →</button>
+          </div>
+        </article>
+        <article class="card proj">
+          <div class="thumb" aria-hidden="true">Python Essential</div>
+          <div class="body">
+            <span class="label">Programming</span>
+            <h3>Python Essential</h3>
+            <p>Python basics: variables, loops, functions, data structures, and simple problem solving.</p>
+            <button class="open" data-p="2">View project →</button>
+          </div>
+        </article>
+        <article class="card proj">
+          <div class="thumb" aria-hidden="true">Website Portfolio</div>
+          <div class="body">
+            <span class="label">Web Design &amp; Development</span>
+            <h3>Website Portfolio</h3>
+            <p>This portfolio: a calm, accessible, responsive site with lavender moving background, built from my design book.</p>
+            <button class="open" data-p="3">View project →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Let’s Connect</h2>
+      <p>Interested in working together, or just want to say hello? I’d love to hear from you.</p>
+      <a class="btn" href="mailto:2601114265@student.buksu.edu.ph">Contact Me</a>
+      <div class="links">
+        <a class="btn ghost" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Angela Marie Q. Cabale · T295 · Built with calm in mind</div>
+</footer>
+<dialog id="dlg" aria-labelledby="dt">
+  <div class="dlg">
+    <button class="close" aria-label="Close" id="x">✕</button>
+    <div class="thumb" id="dth" aria-hidden="true"></div>
+    <div class="in">
+      <span class="eyebrow" id="dl"></span>
+      <h3 id="dt" style="font-size:24px"></h3>
+      <p id="dd"></p>
+      <ul id="du"></ul>
+      <div class="actions"><a class="btn" id="visit" href="#" target="_blank" rel="noopener" hidden>Visit site ↗</a><a class="btn ghost" id="dlink" href="#contact">Ask me about it</a></div>
+    </div>
+  </div>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
